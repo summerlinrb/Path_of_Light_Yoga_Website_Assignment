@@ -1,0 +1,208 @@
+* { 
+box-sizing: border-box; 
+}
+body {
+    background-color: #3F2860;
+    color: #3F2860;
+    font-family: Verdana, Arial, sans-serif;
+}
+header {
+	background-color: #9BC1C2;
+	height: 150px;
+    background-image: url(lilyheader.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+h1 {
+    padding-top: 50px;
+    padding-left: 2em;
+}
+ nav {  float: left;
+		width: 160px;
+		font-weight: bold;
+		padding: 1em; }
+		
+nav a{text-decoration: none;
+      text-align: center;
+      display: block;
+      font-weight: bold;
+      border: 3px outset #cccccc;
+      padding: 1em;
+      margin-bottom: 1em;
+}
+
+nav a:link { 
+color: #3F2860;
+}
+nav a:visited { 
+	color: #497777;
+}
+nav a:hover { color: #A26100;
+			  border: 3px inset #333333; }
+
+nav ul{
+	list-style-type: none;
+    padding-left: 0;
+}
+a {
+	text-decoration: none;
+}
+footer {
+	background-color: #9BC1C2;
+    font-size: .60em;
+    font-style: italic;
+    text-align: center;
+    padding: 1em;
+}
+#wrapper {
+background-color: #F5F5F5;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    min-width: 1200px;
+    max-width: 1480px;
+}
+main { 
+	   margin-left: 170px;
+       padding-top: 1em;
+	   padding-right: 2em;
+	   display: block; 
+	   }
+.navigation {
+    margin-right: 20px;
+}
+.floatleft { 
+	float: left;
+    margin-right: 4em; 
+			 } 
+.clear { 
+	clear: both;
+}
+table{ 
+		  margin-left: auto;
+		  margin-right: auto;	 
+		  margin-bottom: 1em; 
+		  width: 60%;
+		  border: 1px solid #3F2860;
+		  border-collapse: collapse;
+}
+td, th{
+	border: 1px solid #3F2860;
+	padding: 5px; 
+}
+tr:nth-of-type(even){
+	background-color: #9BC1C2;
+}
+caption{ 
+margin: 1em;
+font-weight: bold;
+font-size: 120%;
+}	
+header, nav, main, footer {
+    display: block;
+}
+#mobile { display: none; }
+#desktop { display: inline; }
+@media only screen and (max-width: 1024px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    #wrapper {
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        padding-top: 1px;
+    }
+    nav {
+        float: none;
+        width: auto;
+        padding-left: 2em;
+    }
+
+        nav a {
+            padding: 0.2em;
+            margin-left: 0.3em;
+            float: left;
+            width: 23%;
+        }
+    main {
+        padding-top: 2.5em;
+        padding-bottom: 2.5em;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin: 0;
+        font-size: 90%;
+        float: none;
+    }
+    #hero img {
+        width: 100%;
+        height: auto;
+    }
+    h2, h3, p, dl {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    main ul {
+        margin-left: 2em;
+    }
+    .floatleft {
+        margin-left: 2em;
+        margin-bottom: 1em;
+    }
+    .clear {
+        padding-left: 2em;
+    }
+    #mobile {
+        display: none;
+    }
+    #desktop {
+        display: inline;
+    }
+}
+@media only all and (max-width: 768px) {
+    h1{font-size: 2em;
+       padding-top: 0.25em;
+       padding-left: 1.5em;
+       width: 85%;
+       text-align: center;
+    }
+    nav a{padding: 0.5em;
+          width: 45%;
+          float: left;
+          min-width: 6em;
+          margin-left: 0.5em;
+    }
+    main{padding-top: 0;
+    }
+    .floatleft{float: none;
+               display: none;
+    }
+    footer{padding: 0.5em;
+           margin: 0;
+    }
+    #mobile{display: inline;}
+    #desktop{display: none;}
+}
+label { 
+		float: left;
+		text-align: right;
+        font-weight: bold;
+		width: 10em;
+		padding-right: 1em;
+		display: block;}
+		
+input, textarea {
+				 margin-bottom: 2em;
+				 display: block;
+				 }
+#mySubmit { 
+	margin-left: 15em;
+	}
+
+form {
+	padding: 3em;
+}
